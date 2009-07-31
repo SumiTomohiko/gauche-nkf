@@ -1,0 +1,16 @@
+;;;
+;;; gauche_nkflib.stub
+;;;
+
+"
+#include \"gauche_nkf.h\"
+"
+
+(define-cproc nkf (opts::<list> s::<const-cstring>)
+  (call "Scm_Nkf"))
+
+;; Local variables:
+;; mode: scheme
+;; end:
+
+;; vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2 filetype=scheme
